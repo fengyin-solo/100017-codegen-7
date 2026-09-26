@@ -33,3 +33,13 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .link { border: none; background: none; color: var(--brand); cursor: pointer; padding: 0; }
 .page-foot { display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px; color: var(--muted); }
 .error-text { color: #b42318; }
+.create-panel { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-end; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px; margin-bottom: 12px; }
+.create-error { flex-basis: 100%; margin: 0; font-size: 12px; }
+.detail-panel { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px; margin-top: 12px; }
+.detail-head { display: flex; justify-content: space-between; align-items: center; }
+.detail-head h3 { margin: 0; font-size: 14px; }
+.detail-grid { display: grid; grid-template-columns: 120px 1fr; gap: 6px 12px; margin: 12px 0 0; font-size: 13px; }
+.detail-grid dt { color: var(--muted); }
+.detail-grid dd { margin: 0; }
+.pager { display: flex; gap: 8px; align-items: center; }
+.retry-btn { margin-left: 8px; }

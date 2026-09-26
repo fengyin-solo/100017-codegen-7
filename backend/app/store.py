@@ -23,7 +23,11 @@ class Store:
 
     def find(self, module: str, entry_id: int) -> dict[str, Any] | None:
         for row in self.rows(module):
-            if int(row.get("id", 0)) == entry_id:
+            try:
+                row_id = int(row.get("id", 0))
+            except (TypeError, ValueError):
+                continue
+            if row_id == entry_id:
                 return row
         return None
 
